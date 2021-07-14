@@ -1,0 +1,30 @@
+{
+  "name": "testcafe-testing",
+  "version": "1.0.0",
+  "description": "Automated Testing with Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:headless:5": "testcafe -c 5 chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests -s takeOnFails=true",
+    "test:safari": "testcafe safari ./tests -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:multiple": "testcafe chrome,firefox ./tests -s takeOnFails=true"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Maribel Zamorano",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.14.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0",
+    "xpath-to-css": "^1.0.5"
+  }
+}
